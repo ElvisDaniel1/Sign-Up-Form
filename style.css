@@ -1,3 +1,116 @@
-body {
-    background-color: olive;
+/*------GLOBALS------*/
+
+@font-face {
+    font-family: "Norse";
+    src: url("/font/Norse-Bold.otf"),
+         url("/font/Norse-Bold.woff");
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/*------LEFT------*/
+
+.left {
+    width: 40%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-color: olive;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    font-family: "Norse";
+    color: white;
+    font-size: 80px;
+}
+
+.heading img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40%;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*------RIGHT------*/
+
+.right {
+    width: 60%;
+    display: flex;
+    margin: 150px 0;
+    padding: 0 50px;
+    flex-direction: column;
+}
+
+.right .top-card {
+    height: 20vh;
+}
+
+.right p {
+    font-size: 30px;
+    width: 75%;
+}
+.right p:last-of-type {
+    margin-top: 20px;
+}
+
+.right .middle-card .wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+
+.right .middle-card p:first-of-type {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.right input {
+    width: 300px;
+    padding: 4px 2px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.right label {
+    margin-top: 20px;
+}
+
+
+.right .left-form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.right .right-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
